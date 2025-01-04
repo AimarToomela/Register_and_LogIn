@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Django</title>
+    <style>
+        html { color-scheme: light dark; }
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+        svg { display: block; margin: 1.5rem auto 1.25rem; }
+        @media (min-width: 768px) {
+            body { margin: 3rem auto; max-width: 40rem; }
+        }
+        h1, p { text-align: center; }
+        p { margin: 1rem 1.5rem; }
+        p a { text-decoration: none; color: #007bff; }
+        p a:focus, p a:hover { text-decoration: underline; }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .logout-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007bff; /* Blue color */
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #fff; /* White text */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .logout-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100" height="100" fill="#46a546">
+        <path d="M256 48a208 208 0 100 416 208 208 0 000-416zm93.45 177.6l-104 104a16 16 0 01-22.6 0l-56-56a16 16 0 0122.6-22.6l45.2 45.2 93.8-93.8a16 16 0 1122.6 22.6z"/>
+    </svg>
+    <h1>It worked!</h1>
+    <p>You are authenticated. This is the default page.</p>
+    <p style="text-align: center;">
+        <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
+    </p>
+
+    <div class="gif-container">
+        <img src="https://media.tenor.com/images/07a2508409d0e071dd446bd99ccfc34a/tenor.gif" alt="Welcome GIF" width="300">
+    </div>
+
+</body>
+</html>
